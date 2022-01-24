@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" placeholder="Nhập loại hoa quả" id="fruit"/>
+    <button onclick="checkValue();">Xem giá</button>
+    <ul><strong>List Fruit Of Store:</strong>
+        <li>Ổi</li>
+        <li>Dưa Hấu</li>
+        <li>Táo</li>
+        <li>Xoài</li>
+        <li>Cam</li>
+        <li>Chôm Chôm</li>
+        <li>Măng Cụt</li>
+    </ul>
+<script>
+    function checkValue() {
+        let nameFruit = document.getElementById("fruit").value;
+        switch (nameFruit) {
+            case "Ổi":
+            case "Dưa Hấu":
+                document.write(nameFruit, " có giá 20000 VNĐ/kg")
+                break;
+            case "Xoài":
+            case "Táo":
+                document.write(nameFruit, " có giá 30000 VNĐ/kg")
+                break;
+            case "Chôm Chôm":
+            case "Cam":
+                document.write(nameFruit, " có giá 40000 VNĐ/kg")
+                break;
+            case "Măng Cụt":
+                document.write(nameFruit, " có giá 50000 VNĐ/kg")
+                break;
+            default:
+                document.write("Không có loại quả trên")
+                break;
+        }
+    }
+</script>
+</body>
+</html>
